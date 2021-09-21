@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+th:last-child {
+    width: 10%;
+}
+
+header {
+    width: 100%;
+  
+}
+
+.header-wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    height: 60px;
+    background-color: #009879;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.header-right input {
+    margin: auto 0;
+    height: 35px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    width: 200px;
+    padding: 0 4px;
+}
+
+.header-tool {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.header-tool button {
+    background-color: #20bf6b;
+    color: white;
+    font-weight: 500;
+    height: 35px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.header-tool button i {
+    margin-right: 6px;
+}
+
+.header-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-left: 8px;
+}
+
+.header-left span {
+    position: relative;
+    top: 2px;
+}
+
+.header-left span i {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.header-left span {
+    margin-right: 10px;
+}
+
+.header-title {
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.table {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+table, th, td {
+    border-collapse: collapse;
+    text-align: left;
+    /* border: 1px solid rgba(0,0,0,0.1); */
+}
+
+tbody tr {
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+table td {
+    padding: 8px;
+}
+
+.title-row {
+    height: 50px;
+    z-index: 2;
+}
+
+th {
+    font-weight: 400;
+}
+
+th button {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    background-color:transparent;
+    border: none;
+    padding: 10px 0px;
+    outline: none;
+    font-weight: 600;
+    font-size: 1rem;
+    align-items: center;
+}
+
+th:first-of-type button {
+    padding-left: 10px;
+}
+
+th button i {
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+table>tr:nth-child(2) td {
+    padding: 0; 
+}
+
+td input {
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+
+td:last-child {
+    padding: 0;
+}
+
+/* .add-student-data {
+    padding: 0 !important;
+    display: flex;
+} */
+
+.btn {
+    width: 50%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.button-form {
+    display: flex;
+}
+
+.button-form button {
+    width: 50%;
+    border: none;
+    border-radius: 0;
+    height: 50px;
+    background-color:transparent;
+    cursor: pointer;
+}
+
+.button-form button i{
+    font-weight: 500;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+.btn-delete i {
+    color: #e74c3c;
+}
+
+.btn-edit i {
+    color: orange;
+}
+
+.button-form button:hover {
+    opacity: 0.8;
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 36px;
+    background-color:white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    position: absolute; 
+    top: 0;
+    animation: modalShow 0.3s linear;
+}
+
+.modal-footer {
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    padding: 12px 24px; 
+    text-align: right;
+}
+
+.modal-footer button {
+    background-color: #20bf6b;  
+    color: white;
+    border: none;
+    height: 35px;
+    width: 80px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.input-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+}
+
+.input-data {
+    width: 100%;
+    padding: 12px 0 24px 0;
+}
+
+.input-data label {
+    padding: 10px 0;
+}
+
+.modal-header {
+    padding: 16px 24px 0 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-header button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-header button i {
+    pointer-events: none;
+    font-size: 1rem;
+}
+
+.btn-cancel {
+    background-color:white !important;
+    color: #333 !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+
+.modal-heading {
+    font-weight: 400;
+    opacity: 0.8;
+    font-size: 1.5rem;
+}
+
+@keyframes modalShow {
+    from { 
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    };
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    };
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    display: none;
+    z-index: 10;
+}
+
+.modal-overlay {
+    background-color:rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    animation: fadeIn 0.3s linear;
+}
+
+.input-data input {
+    height: 35px;
+    padding: 0 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    outline: none;
+}
+
+th button {
+    cursor: pointer;
+}
+
+.modal-delete-overlay {
+    animation: fadeIn 0.3s linear;
+}
+
+.modal-delete-container {
+    margin-top: 0;
+    top: 20%;
+    animation: fadeIn 0.1s linear;
+}
+
+.modal-delete {
+    display: none;
+}
+
+.modal-delete-heading {
+    width: 100%;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal-btn-delete {
+    background-color: #e74c3c !important;
+}
+
+.modal-delete-main {
+    width: 100%;
+    padding: 24px; 
+}
+
+.modal-delete-main h5 {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 16px;
+}
+
+.modal-delete-msg {
+    font-weight: 400;
+}
+
+.progress {
+    padding:0;
+    width:90%;
+    height:18px;
+    overflow:hidden;
+    background:#dadada;
+    border-radius:6px;
+    position:relative;
+  }
+  
+  .bar {
+    position:relative;
+    float:left;
+    min-width:1%;
+    height:100%;
+    background:cornflowerblue;
+  }
+  
+  .percent {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    font-family:tahoma,arial,helvetica;
+    font-size:12px;
+    color:white;
+    z-index: 1;
+}
